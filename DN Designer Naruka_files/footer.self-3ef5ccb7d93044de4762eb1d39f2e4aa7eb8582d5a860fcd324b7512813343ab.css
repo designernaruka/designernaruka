@@ -1,0 +1,395 @@
+/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-content-caption {
+  bottom: 0;
+  color: #292E4A;
+  display: table;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 100%;
+}
+
+/* line 77, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.content-holder {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* only mixins only in this file */
+/* border-radius */
+/* Border-Radius */
+/* Transactions */
+/* Box Shadow */
+/* Media Query for Tablet Landscape */
+/* line 6, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+footer {
+  padding: 0px;
+}
+
+/* line 11, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo {
+  background-color: #F5F5F5;
+}
+/* line 14, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo .container {
+  padding: 50px 0;
+}
+/* line 18, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo .contactHolder {
+  display: table;
+  height: 100px;
+  vertical-align: middle;
+}
+/* line 23, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo .contactHolder > div {
+  border-left: dashed 2px #D5D5D5;
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+/* line 31, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo .contactSprite {
+  color: #292E4A;
+  display: table-cell;
+  min-width: 76px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+/* line 39, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo h2 {
+  color: #292E4A;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+/* line 45, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactInfo p {
+  color: #292E4A;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* line 59, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactmapForum > div {
+  padding: 0px;
+}
+/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactmapForum form {
+  padding: 30px 0;
+}
+
+/* line 69, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contact-form {
+  margin-top: 10px;
+}
+/* line 72, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contact-form .textarea {
+  resize: none;
+}
+
+/* line 78, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.form-control {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 3px #292E4A;
+  box-shadow: none;
+  color: #292E4A;
+  height: 49px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+}
+/* line 89, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.form-control:focus {
+  border-color: #A82900;
+  box-shadow: none;
+  color: #292E4A;
+  padding: 6px 18px;
+}
+
+/* line 97, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.form-control-feedback {
+  line-height: 50px;
+  top: 0px;
+}
+
+/* line 102, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.main-btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #A82900;
+  border-color: #A82900;
+  color: #F5F5F5;
+  padding: 10px 20px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+/* line 113, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.main-btn:hover {
+  background: #292E4A;
+  border-color: #292E4A;
+  color: #ffffff;
+}
+
+/* line 123, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: #292E4A;
+  background-color: rgba(41, 46, 74, 0.9);
+  height: 0%;
+  left: 0;
+  overflow-y: hidden;
+  position: fixed;
+  top: 72px;
+  width: 100%;
+  z-index: 1;
+}
+/* line 135, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay .headingSecondary {
+  color: #ffffff;
+  padding-bottom: 20px;
+  text-align: left;
+}
+/* line 141, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay .overlay-content {
+  bottom: 0;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+/* line 150, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay a {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #ffffff;
+  display: block;
+  font-size: 4em;
+  text-decoration: none;
+}
+/* line 157, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay a:hover, .overlay a:focus {
+  color: #A82900;
+}
+/* line 164, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.overlay .closebtn {
+  font-size: 60px !important;
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  z-index: 999;
+}
+
+/* line 174, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactForum {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: rgba(168, 41, 0, 0.7);
+  bottom: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  float: right;
+  padding: 5px;
+  position: fixed;
+  right: 30px;
+}
+/* line 185, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactForum .contactSprite {
+  color: #ffffff;
+}
+/* line 189, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactForum:hover {
+  background-color: #292E4A;
+}
+
+/* line 207, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.socialConnect {
+  background-color: #F5F5F5;
+  padding: 100px 0;
+}
+
+/* line 212, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.iconHolder {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-right: dashed 2px #D5D5D5;
+  height: 71px;
+  padding: 6px 10px;
+  text-align: center;
+}
+/* line 219, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.iconHolder.last-child {
+  border: none;
+}
+/* line 223, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.iconHolder a {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  border: solid 2px #292E4A;
+  color: #292E4A;
+  display: inline-block;
+  height: 58px;
+  width: 58px;
+}
+/* line 231, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.iconHolder a:hover {
+  background-color: #292E4A;
+  color: #ffffff;
+}
+/* line 238, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.iconHolder .fa {
+  padding: 9px 0;
+  text-align: center;
+}
+
+/* line 245, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.socialIcons {
+  background: url(/images/sprites/socialIcons.svg) 0 0 no-repeat;
+}
+
+/* line 254, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .container {
+  padding: 100px 0;
+}
+/* line 258, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .btn-lg {
+  padding: 13px 16px;
+}
+/* line 262, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .input-group {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: solid 2px #292E4A;
+  margin-top: 10px;
+}
+/* line 269, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .inputText {
+  -webkit-border-radius: 25px 0 0 25px;
+  -moz-border-radius: 25px 0 0 25px;
+  -ms-border-radius: 25px 0 0 25px;
+  border-radius: 25px 0 0 25px;
+  color: #292E4A;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+/* line 277, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .inputText:focus {
+  outline: none;
+}
+/* line 283, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .btnSubmit {
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: #292E4A;
+  border-color: #292E4A;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  outline: none;
+  position: absolute;
+  right: -1px;
+}
+/* line 296, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.contactUpdates .btnSubmit:hover {
+  background-color: #A82900;
+  border-color: #A82900;
+}
+
+/* line 307, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation {
+  color: #292E4A;
+  font-size: 1em;
+}
+/* line 311, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation .container {
+  padding: 15px 0;
+}
+/* line 316, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation .container div {
+  padding: 0;
+}
+/* line 322, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation a:after {
+  border-right: solid 1px #292E4A;
+  content: ' ';
+  display: inline-block;
+  height: 13px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+/* line 330, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation a:after:hover {
+  background-color: transparent;
+}
+/* line 337, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation a:last-child:after {
+  display: none;
+}
+
+/* line 345, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerNavigation .nav > li > a {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 351, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.nav > li > a:hover {
+  background-color: transparent;
+}
+
+/* line 354, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.nav > a,
+.nav > a:hover,
+.nav > a:focus {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: transparent;
+}
+
+/* line 361, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.nav > li:before,
+.nav > li.first-child:before {
+  padding: 0;
+}
+
+/* line 366, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.nav > li:before, .nav > li.first-child:before {
+  height: 0;
+}
+
+/* line 374, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/footer.scss */
+.footerLogo {
+  padding: 20px 0;
+}

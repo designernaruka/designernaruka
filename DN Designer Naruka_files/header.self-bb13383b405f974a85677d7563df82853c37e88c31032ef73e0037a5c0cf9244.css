@@ -1,0 +1,357 @@
+/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-content-caption, .swiper-caption {
+  bottom: 0;
+  color: #292E4A;
+  display: table;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 100%;
+}
+
+/* line 77, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.content-holder, .swiper-caption .swiper-content-holder {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* only mixins only in this file */
+/* border-radius */
+/* Border-Radius */
+/* Transactions */
+/* Box Shadow */
+/* Media Query for Tablet Landscape */
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+/* line 10, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+
+/* line 14, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+footer {
+  padding: 30px 0;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation Nav Bar
+/* ---------------------------------------------- */
+/* line 21, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-default {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+/* line 25, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-default.navbar-shrink {
+  background-color: #ffffff;
+}
+
+/* line 31, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-brand {
+  height: auto;
+  width: 240px;
+}
+
+/* line 37, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li {
+  margin-left: -1px;
+}
+/* line 41, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li:before {
+  color: #292E4A;
+  content: '|';
+  display: inline-block;
+  height: 30px;
+  opacity: 0.3;
+  padding: 26px 0;
+  width: 1px;
+}
+/* line 53, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li.first-child:before {
+  content: ' ';
+  padding: 0;
+}
+/* line 62, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li.active a {
+  background-color: transparent;
+  color: #A82900;
+}
+/* line 69, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li > a {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #292E4A;
+  display: inline-block;
+  margin-bottom: 26px;
+  margin-top: 26px;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+}
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.nav > li > a:hover {
+  background-color: transparent;
+  color: #A82900;
+}
+
+/* line 87, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #292E4A;
+}
+/* line 90, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #A82900;
+}
+
+/* line 95, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-container {
+  padding: 20px 0 20px 0;
+}
+
+/* line 99, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar.navbar-fixed-top.fixed-theme {
+  background-color: #222;
+  border-color: #080808;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* line 105, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-brand.fixed-theme {
+  font-size: 18px;
+}
+
+/* line 109, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-container.fixed-theme {
+  padding: 0;
+}
+
+/* line 113, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: transparent;
+}
+
+/* ---------------------------------------------- /*
+ * mobile cross icon
+/* ---------------------------------------------- */
+/* line 126, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle {
+  background: transparent;
+  border: 0;
+  margin-right: 0;
+  outline: none;
+  padding: 20px;
+}
+/* line 133, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle:hover {
+  background: transparent;
+}
+/* line 137, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle .icon-bar {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: #292E4A;
+  border-radius: 0;
+  width: 22px;
+}
+/* line 146, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle.collapsed .icon-bar {
+  background-color: #A82900;
+}
+/* line 150, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+/* line 154, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+/* line 158, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* line 164, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+/* line 169, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle .middle-bar {
+  opacity: 0;
+}
+/* line 173, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-header .navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+/* ---------------------------------------------- /*
+ * Hero Slider
+/* ---------------------------------------------- */
+/* line 183, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.heroSlider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(/assets/hero-banner/hearo-01-8ead0f661ea954e48d3af683acf62bcab959eff510dc7829a4192eca62d0641e.svg) center top;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}
+/* line 191, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.heroSlider .swiper-button-white {
+  color: #292E4A;
+}
+/* line 195, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.heroSlider .swiper-slide {
+  text-align: left;
+  font-size: 2em;
+  /* ---------------------------------------------- /*
+  /* Center text Vertically */
+  /* ---------------------------------------------- */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+/* line 229, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.mouse-icon {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border: 2px solid #292E4A;
+  bottom: 2vh;
+  display: block;
+  height: 40px;
+  left: 49%;
+  opacity: 0.7;
+  position: absolute;
+  right: 49%;
+  width: 24px;
+  z-index: 10;
+}
+/* line 243, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.mouse-icon .wheel {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: #292E4A;
+  height: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 4px;
+  width: 2px;
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-name: drop;
+  animation-name: drop;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+/* line 302, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.mouse-icon:hover {
+  background-color: #292E4A;
+  opacity: 1;
+}
+/* line 306, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.mouse-icon:hover .wheel {
+  background-color: #ffffff;
+}
+
+/* line 318, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-toggle {
+  overflow: hidden;
+}
+/* line 321, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-toggle .icon-bar {
+  transition: opacity, transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+/* line 329, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+/* line 332, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+/* line 336, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/header.scss */
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
