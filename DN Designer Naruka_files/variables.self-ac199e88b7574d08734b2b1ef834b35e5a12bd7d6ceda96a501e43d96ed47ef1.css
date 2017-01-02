@@ -1,0 +1,28 @@
+/* line 65, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-content-caption {
+  bottom: 0;
+  color: #292E4A;
+  display: table;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 100%;
+}
+
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.content-holder {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* line 86, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-structure {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}

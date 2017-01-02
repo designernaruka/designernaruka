@@ -11539,7 +11539,7 @@ button.swiper-pagination-bullet {
   animation-name: fadeInLeftShort;
 }
 
-/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 65, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .cell-content-caption, .swiper-caption, .dnIntro .dnIntro-caption, .dnAbout .dnAbout-caption, .dnSkills .skillsContent, .dnSkills .dnSkills-caption, .dnWork .dnWork-caption, .dnLab .dnLab-caption {
   bottom: 0;
   color: #292E4A;
@@ -11553,12 +11553,20 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
-/* line 77, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .content-holder, .swiper-caption .swiper-content-holder, .dnIntro .dnIntro-content, .dnAbout .dnAbout-content, .dnSkills .dnSkills-content, .dnWork .dnWork-content, .dnLab .dnLab-content {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
   width: 100%;
+}
+
+/* line 86, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-structure, .dnSkills .skillsSet .col-md-2,
+.dnSkills .skillsSet .col-md-10 {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
 }
 
 /* only mixins only in this file */
@@ -11897,7 +11905,7 @@ footer {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 65, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .cell-content-caption, .swiper-caption, .dnIntro .dnIntro-caption, .dnAbout .dnAbout-caption, .dnSkills .skillsContent, .dnSkills .dnSkills-caption, .dnWork .dnWork-caption, .dnLab .dnLab-caption {
   bottom: 0;
   color: #292E4A;
@@ -11911,12 +11919,20 @@ footer {
   width: 100%;
 }
 
-/* line 77, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .content-holder, .swiper-caption .swiper-content-holder, .dnIntro .dnIntro-content, .dnAbout .dnAbout-content, .dnSkills .dnSkills-content, .dnWork .dnWork-content, .dnLab .dnLab-content {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
   width: 100%;
+}
+
+/* line 86, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-structure, .dnSkills .skillsSet .col-md-2,
+.dnSkills .skillsSet .col-md-10 {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
 }
 
 /* only mixins only in this file */
@@ -12293,7 +12309,7 @@ footer {
   padding: 20px 0;
 }
 
-/* line 63, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 65, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .cell-content-caption, .swiper-caption, .dnIntro .dnIntro-caption, .dnAbout .dnAbout-caption, .dnSkills .skillsContent, .dnSkills .dnSkills-caption, .dnWork .dnWork-caption, .dnLab .dnLab-caption {
   bottom: 0;
   color: #292E4A;
@@ -12307,12 +12323,20 @@ footer {
   width: 100%;
 }
 
-/* line 77, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
 .content-holder, .swiper-caption .swiper-content-holder, .dnIntro .dnIntro-content, .dnAbout .dnAbout-content, .dnSkills .dnSkills-content, .dnWork .dnWork-content, .dnLab .dnLab-content {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
   width: 100%;
+}
+
+/* line 86, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/variables.scss */
+.cell-structure, .dnSkills .skillsSet .col-md-2,
+.dnSkills .skillsSet .col-md-10 {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
 }
 
 /* only mixins only in this file */
@@ -12332,12 +12356,12 @@ body a {
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   border: none;
-  color: #292E4A;
+  color: #A82900;
   text-decoration: none;
 }
 /* line 18, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 body a:hover {
-  color: #A82900;
+  color: #292E4A;
   text-decoration: none;
 }
 
@@ -12353,18 +12377,22 @@ h3 {
 .headingSecondary .headingHolder {
   display: inline-block;
   padding: 5px 0 5px 10px;
-  width: 100%;
 }
 /* line 42, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .headingSecondary h2 {
   font-size: 3.2em;
 }
 /* line 46, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.headingSecondary h3 {
+  font-size: 2.8em;
+  line-height: 40px;
+}
+/* line 51, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .headingSecondary .textLighter {
   font-style: normal;
   font-weight: lighter;
 }
-/* line 51, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 56, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .headingSecondary:before {
   border-right: solid 6px #A82900;
   content: '';
@@ -12373,212 +12401,252 @@ h3 {
   margin: 6px 0 0 -15px;
   vertical-align: top;
 }
-/* line 60, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 65, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .headingSecondary span {
   display: block;
   font-size: 1.5em;
   font-weight: lighter;
 }
 
-/* line 70, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 75, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceTzero {
   padding-top: 0;
 }
 
-/* line 74, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 79, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceRzero {
   padding-right: 0;
 }
 
-/* line 78, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 83, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceBzero {
   padding-bottom: 0;
 }
 
-/* line 82, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 87, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceLzero {
   padding-left: 0;
 }
 
-/* line 86, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 91, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceTnano {
   padding-top: 40px;
 }
 
-/* line 89, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 94, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceBnano {
   padding-bottom: 40px;
 }
 
-/* line 92, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 97, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .spaceB120 {
   padding-bottom: 120px;
 }
 
-/* line 98, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 103, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .alignleft {
   float: left;
 }
 
-/* line 102, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 107, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .textleft {
   float: left;
 }
 
-/* line 106, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 111, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .alignright {
   float: right;
 }
 
-/* line 110, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 115, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .textright {
   text-align: right;
 }
 
-/* line 114, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 119, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .aligncenter {
   text-align: center;
 }
 
-/* line 119, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 124, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .secondaryColor {
   color: #A82900;
 }
 
-/* line 127, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 132, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnIntro {
   height: 100vh;
   position: relative;
   width: 100%;
 }
-/* line 140, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 145, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnIntro .headingSecondary {
   display: inline-block;
   padding-left: 15px;
 }
-/* line 145, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 150, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnIntro .introText {
   font-size: 1.2em;
   padding-top: 30px;
   line-height: 2em;
 }
 
-/* line 156, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 161, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnAbout {
   height: 100vh;
   position: relative;
   width: 100%;
 }
-/* line 169, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 174, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnAbout .headingSecondary {
   padding-left: 15px;
 }
 
-/* line 178, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 183, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills {
   height: 100vh;
   position: relative;
   width: 100%;
 }
-/* line 183, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 188, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsLeft {
   background-color: #292E4A;
   color: #ffffff;
   min-height: 100vh;
   text-align: right;
 }
-/* line 190, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 195, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsRight {
   background-color: #F8F4F4;
   color: #292E4A;
   min-height: 100vh;
   text-align: left;
 }
-/* line 197, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 202, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsPicture {
   position: absolute;
   top: -82px;
 }
-/* line 201, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 206, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsPicture img {
   min-height: 100vh;
   width: auto;
 }
-/* line 210, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 212, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsContent {
+  padding: 20px 0;
+}
+/* line 216, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsContent.leftContent {
   color: #ffffff;
   text-align: right;
 }
-/* line 215, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 220, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsContent.leftContent .col-md-10 {
+  border-right: dashed 2px #ffffff;
+}
+/* line 224, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsContent.leftContent .skillsSet {
+  float: right;
+}
+/* line 229, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .skillsContent.rightContent {
   color: #292E4A;
 }
-/* line 229, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 232, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsContent.rightContent .skillsSet {
+  float: left;
+}
+/* line 236, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsContent.rightContent .col-md-10 {
+  border-left: dashed 2px #292E4A;
+}
+/* line 243, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsSet {
+  padding-top: 20px;
+}
+/* line 246, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsSet h4 {
+  font-size: 1.8em;
+  font-weight: normal;
+}
+/* line 251, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsSet .col-md-2 {
+  text-align: center;
+}
+/* line 260, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+.dnSkills .skillsSet .skillExp {
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+/* line 276, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnSkills .headingSecondary {
   padding-left: 15px;
 }
 
-/* line 235, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 282, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box {
   position: relative;
 }
-/* line 238, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 285, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box.alt-right {
   margin-bottom: 25px;
   padding-right: 60px;
 }
-/* line 243, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 290, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box .alt-icon-right {
   position: absolute;
   right: 0;
   top: 5px;
 }
 
-/* line 251, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 298, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box {
   position: relative;
 }
-/* line 254, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 301, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box.alt-right, .content-box.alt-left {
   margin-bottom: 25px;
 }
-/* line 259, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 306, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box.alt-right {
   padding-right: 60px;
 }
-/* line 263, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 310, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box.alt-left {
   padding-left: 60px;
 }
-/* line 267, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 314, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box .alt-icon-right,
 .content-box .alt-icon-left {
   position: absolute;
   top: 5px;
 }
-/* line 273, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 320, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .content-box .alt-icon-left {
   left: 0;
 }
 
-/* line 282, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 329, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnWork {
   height: 100vh;
   position: relative;
   width: 100%;
 }
-/* line 295, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 342, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnWork .headingSecondary {
   padding-left: 15px;
 }
 
-/* line 304, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 351, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnLab {
   height: 100vh;
   position: relative;
   width: 100%;
 }
-/* line 317, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
+/* line 364, /Users/DesignerNaruka/projects/portfolio/app/assets/stylesheets/v1layout.scss */
 .dnLab .headingSecondary {
   padding-left: 15px;
 }
