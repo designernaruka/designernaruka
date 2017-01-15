@@ -1,0 +1,377 @@
+// Import Variables and mixins
+
+@import "variables";
+@import "mixins";
+
+footer {
+  padding: $spacenone;
+}
+
+// contact block css
+.contactInfo {
+  background-color: $grey-secondary;
+
+  .container {
+    padding: $spacelarge + $spacesmall 0;
+  }
+
+  .contactHolder {
+    display: table;
+    height: 100px;
+    vertical-align: $verticaltext-Middle;
+
+    > div {
+      border-left: $dashedborder 2px $grey-primary;
+      display: table-cell;
+      padding-left: $spacemedium;
+      vertical-align: $verticaltext-Middle;
+    }
+  }
+
+  .contactSprite {
+    color: $brand-secondary;
+    display: table-cell;
+    min-width: 76px;
+    padding: 0 $spacemedium;
+    vertical-align: $verticaltext-Middle;
+  }
+
+  h2 {
+    color: $brand-secondary;
+    font-size: $textsmall - 0.4;
+    line-height: $textxsmall;
+  }
+
+  p {
+    color: $brand-secondary;
+    font-size: $textsmall - 0.8;
+    line-height: $textsmall - 0.5;
+  }
+
+}
+
+// Contact Block end
+
+// contact form and map block
+
+.contactmapForum {
+
+  > div {
+    padding: $spacenone;
+  }
+
+  form {
+    padding: $spacelarge - $spacesmall 0;
+  }
+
+}
+
+.contact-form {
+  margin-top: $spacesmall;
+
+  .textarea {
+    resize: none;
+  }
+
+}
+
+.form-control {
+  @include transiction(0.6s);
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 3px $brand-secondary;
+  box-shadow: none;
+  color: $brand-secondary;
+  height: 49px;
+  text-transform: $uppercase;
+  padding: $spacexsmall + 1 $spacesmall;
+
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: none;
+    color: $brand-secondary;
+    padding: $spacexsmall + 1 $spacemedium - 2;
+  }
+}
+
+.form-control-feedback {
+  line-height: 50px;
+  top: 0px;
+}
+
+.main-btn {
+  @include border-radius(3px);
+  @include transiction(0.6s);
+  background: $brand-primary;
+  border-color: $brand-primary;
+  color: $grey-secondary;
+  padding: $spacesmall $spacemedium;
+  text-shadow: none;
+  text-transform: $uppercase;
+
+
+  &:hover {
+    background: $brand-secondary;
+    border-color: $brand-secondary;
+    color: $brand-white;
+  }
+
+}
+
+// Footer Contact Form
+
+.overlay {
+  @include transiction(0.5s);
+  background-color: $brand-secondary;
+  background-color: rgba($brand-secondary, 0.9);
+  height: 0%;
+  left: 0;
+  overflow-y: hidden;
+  position: fixed;
+  top: 72px;
+  width: 100%;
+  z-index: 1;
+
+  .headingSecondary {
+    color: $brand-white;
+    padding-bottom: $spacemedium;
+    text-align: $alignleft;
+  }
+
+  .overlay-content {
+    bottom: 0;
+    margin-top: $spacesmall + $spacemedium;
+    position: $relative;
+    text-align: $aligncenter;
+    top: 0;
+    width: 100%;
+  }
+
+  a {
+    @include transiction(0.5s);
+    color: $brand-white;
+    display: $block;
+    font-size: $textmedium;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+
+  }
+
+  .closebtn {
+    font-size: 60px !important;
+    position: $absolute;
+    right: 45px;
+    top: 20px;
+    z-index: 999;
+  }
+
+}
+
+.contactForum {
+  @include transiction(0.3s);
+  @include border-radius(3px);
+  background-color: rgba($brand-primary, 0.7);
+  bottom: 3px;
+  color: $brand-white;
+  cursor: pointer;
+  float: $alignright;
+  padding: $spacexsmall;
+  position: fixed;
+  right: 30px;
+
+  .contactSprite {
+    color: $brand-white;
+  }
+
+  &:hover {
+    background-color: $brand-secondary;
+  }
+}
+
+// @media screen and (max-height: 450px) {
+//   .overlay {overflow-y: auto;}
+//   .overlay a {font-size: 20px}
+//   .closebtn {
+//     font-size: 40px !important;
+//     top: 15px;
+//     right: 35px;
+//   }
+// }
+
+// contact form and map block end
+
+// social connect blcok css
+.socialConnect {
+  background-color: $grey-secondary;
+  padding: $spacexlarge + $spacemedium 0;
+}
+
+.iconHolder {
+  @include transiction(0.6s);
+  border-right: $dashedborder 2px $grey-primary;
+  height: 71px;
+  padding: $spacexsmall + 1 $spacesmall;
+  text-align: $aligncenter;
+
+  &.last-child {
+    border: none;
+  }
+
+  a {
+    @include border-radius(30px);
+    border: $solidborder 2px $brand-secondary;
+    color: $brand-secondary;
+    display: $inBlock;
+    height: 58px;
+    width: 58px;
+
+    &:hover {
+      background-color: $brand-secondary;
+      color: $brand-white;
+    }
+
+  }
+
+  .fa {
+    padding: $spacemedium - $spacexsmall 0;
+    text-align: $aligncenter;
+  }
+
+}
+
+.socialIcons {
+  background: image-url("sprites/socialIcons.svg") 0 0 no-repeat;
+}
+
+
+// contactUpdates block css
+
+  .contactUpdates {
+
+    .container {
+      padding: $spacexlarge + $spacemedium 0;
+    }
+
+    .btn-lg {
+      padding: $spacesmall + 3 $spacesmall + $spacexsmall + 1;
+    }
+
+    .input-group {
+      @include border-radius(25px);
+      background-color: $brand-white;
+      border: solid 2px $brand-secondary;
+      margin-top: $spacesmall;
+    }
+
+    .inputText {
+      @include border-radius(25px 0 0 25px);
+      color: $brand-secondary;
+      font-size: $textxsmall;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-align: $alignleft;
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    .btnSubmit {
+      @include border-radius(0 25px 25px 0);
+      @include transiction(0.6s);
+      background-color: $brand-secondary;
+      border-color: $brand-secondary;
+      color: $brand-white;
+      font-size: $textxsmall;
+      font-weight: 300;
+      letter-spacing: 1px;
+      outline: none;
+      position: $absolute;
+      right: -1px;
+
+      &:hover {
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+
+  }
+
+// contact updates vblock css end
+
+// footer navigation block css
+.footerNavigation {
+  color: $brand-secondary;
+  font-size: $textxsmall;
+
+  .container {
+    // border-bottom: $solidborder 1px $brand-secondary;
+    // border-top: $solidborder 1px $brand-secondary;
+    padding: $spacesmall + $spacexsmall 0;
+
+    div {
+      padding: 0;
+    }
+  }
+
+  a {
+    &:after {
+      border-right: $solidborder 1px $brand-secondary;
+      content: ' ';
+      display: $inBlock;
+      height: 13px;
+      margin: 0 $spacesmall;
+      vertical-align: $verticaltext-Middle;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.footerNavigation .nav > li > a {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav > li > a:hover {
+  background-color: transparent;
+}
+.nav > a,
+.nav > a:hover,
+.nav > a:focus {
+  @include transiction(0.8s);
+  background-color: $transparent;
+}
+
+.nav > li:before,
+.nav > li.first-child:before {
+  padding: 0;
+}
+
+.nav > li:before, .nav > li.first-child:before {
+  height: 0;
+}
+
+// footer navigation end
+
+// footer logo
+
+.footerLogo {
+  padding: $spacemedium 0;
+}

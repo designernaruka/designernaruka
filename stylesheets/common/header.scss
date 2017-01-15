@@ -1,0 +1,341 @@
+// Import Variables and mixins
+
+@import "variables";
+@import "mixins";
+
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+footer {
+    padding: 30px 0;
+}
+
+/* ---------------------------------------------- /*
+ * Navigation Nav Bar
+/* ---------------------------------------------- */
+ .navbar-default {
+  background-color: rgba($brand-white, .7);
+  border: none;
+
+  &.navbar-shrink {
+    background-color: $brand-white ;
+  }
+
+ }
+
+.navbar-brand {
+  height: auto;
+  // visibility: hidden;
+  width: 240px;
+}
+
+.nav > li {
+
+  margin-left: -1px;
+
+  &:before {
+    color: $brand-secondary;
+    content: '|';
+    display: $inBlock;
+    height: 30px;
+    opacity: 0.3;
+    padding: $spacemedium + $spacesmall - 4 0;
+    width: 1px;
+  }
+
+  &.first-child {
+
+    &:before {
+      content: ' ';
+      padding: 0;
+    }
+
+  }
+
+  &.active {
+
+    a {
+      background-color: $transparent;
+      color: $brand-primary;
+    }
+
+  }
+
+  > a {
+    @include transiction(0.8s);
+    color: $brand-secondary;
+    display: $inBlock;
+    margin-bottom: $spacemedium + $spacesmall - 4;
+    margin-top: $spacemedium + $spacesmall - 4;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $transparent;
+      color: $brand-primary;
+    }
+  }
+
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: $brand-secondary;
+
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
+.navbar-container {
+  padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+  background-color: #222;
+  border-color: #080808;
+  box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  @include transiction(0.8s);
+  background-color: $transparent;
+}
+
+/* ---------------------------------------------- /*
+ * mobile cross icon
+/* ---------------------------------------------- */
+.navbar-header .navbar-toggle {
+  background: $transparent;
+  border: 0;
+  margin-right: 0;
+  outline: none;
+  padding: $spacemedium;
+
+  &:hover {
+    background: $transparent;
+  }
+
+  .icon-bar {
+    @include transiction(0.2s);
+    background-color: $brand-secondary;
+    border-radius: 0;
+    width: 22px;
+  }
+
+  &.collapsed {
+
+    .icon-bar {
+      background-color: $brand-primary;
+    }
+
+    .top-bar {
+      transform: rotate(0);
+    }
+
+    .middle-bar {
+      opacity: 1;
+    }
+
+    .bottom-bar {
+      transform: rotate(0);
+    }
+
+  }
+
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+
+  .middle-bar {
+    opacity: 0;
+  }
+
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+}
+
+/* ---------------------------------------------- /*
+ * Hero Slider
+/* ---------------------------------------------- */
+.heroSlider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: image-url("hero-banner/hearo-01.svg") center top;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+
+  .swiper-button-white {
+    color: $brand-secondary;
+  }
+
+  .swiper-slide {
+    text-align: $alignleft;
+    font-size: $textsmall;
+    /* ---------------------------------------------- /*
+    /* Center text Vertically */
+    /* ---------------------------------------------- */
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+  }
+
+}
+
+.swiper-caption {
+  @extend .cell-content-caption;
+
+  .swiper-content-holder {
+    @extend .content-holder;
+  }
+}
+
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+.mouse-icon {
+  @include border-radius(16px);
+  @include transiction(0.4s);
+  border: 2px solid $brand-secondary;
+  bottom: 2vh;
+  display: $block;
+  height: 40px;
+  left: 49%;
+  opacity: 0.7;
+  position: $absolute;
+  right: 49%;
+  width: 24px;
+  z-index: 10;
+
+  .wheel {
+    @include border-radius(10px);
+    background: $brand-secondary;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    position: $relative;
+    top: 4px;
+    width: 2px;
+
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-name: drop;
+            animation-name: drop;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+
+  @-webkit-keyframes drop {
+    0% {
+      top: 5px;
+      opacity: 0;
+    }
+    30% {
+      top: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  }
+  @keyframes drop {
+    0% {
+      top: 5px;
+      opacity: 0;
+    }
+    30% {
+      top: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $brand-secondary;
+    opacity: 1;
+
+    .wheel {
+      background-color: $brand-white;
+    }
+
+  }
+
+}
+
+
+$speed: 200ms;
+$easing: cubic-bezier(0.7, 0, 0, 0.7);
+
+.navbar-toggle {
+  overflow: hidden;
+
+  .icon-bar {
+    transition: opacity, transform;
+    transition-duration: $speed;
+    transition-timing-function: $easing;
+  }
+
+  &:not(.collapsed) {
+    .icon-bar {
+      &:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      &:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
+}

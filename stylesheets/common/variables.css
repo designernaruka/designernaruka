@@ -1,0 +1,24 @@
+.cell-content-caption {
+  bottom: 0;
+  color: #292E4A;
+  display: table;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
+  width: 100%; }
+
+.content-holder {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  width: 100%; }
+
+.cell-structure {
+  display: table-cell;
+  float: none;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=variables.css.map */

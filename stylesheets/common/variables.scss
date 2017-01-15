@@ -1,0 +1,90 @@
+// Text Colour
+
+$transparent: transparent;
+$bg-secondary:    #F8F4F4;
+$brand-black:     #222222;
+$brand-primary:   #A82900;
+$brand-secondary: #292E4A;
+$brand-white:     #ffffff;
+$grey-primary:    #D5D5D5;
+$grey-secondary:  #F5F5F5;
+$grey-optional: #E3E3E3;
+
+
+// Font size
+
+$textxsmall: 1em;
+$textsmall:  2em;
+$textmedium: 4em;
+$textlarge:  6em;
+$textxlarge: 8em;
+
+
+// Common Margin & paddings & spacing
+$spacenone:       0px;
+$spacexsmall:     5px;
+$spacesmall:     10px;
+$spacemedium:    20px;
+$spacelarge:     40px;
+$spacexlarge:    80px;
+$spacexxxlarge: 150px;
+
+// alignment and block
+
+$alignleft :   left;
+$alignright : right;
+$aligncenter: center;
+$inBlock: inline-block;
+$block: block;
+$verticalTop : top;
+$verticaltext-Top : text-top;
+$verticaltext-Middle : middle;
+
+// border and outline
+$dashedborder: dashed;
+$solidborder:   solid;
+
+
+// verticall alignment
+
+// font weight and case
+
+$font-bold: bold;
+$font-normal: normal;
+$uppercase: uppercase;
+
+
+// width
+$width100p : 100%;
+
+// position
+$absolute: absolute;
+$relative: relative;
+
+
+.cell-content-caption {
+  bottom: 0;
+  color: $brand-secondary;
+  display: table;
+  height: 100vh;
+  left: 0;
+  position: $absolute;
+  right: 0;
+  text-align: $alignleft;
+  top: 0;
+  width: 100%;
+
+}
+
+.content-holder {
+  display: table-cell;
+  height: 100%;
+  vertical-align: $verticaltext-Middle;
+  width: 100%;
+}
+
+.cell-structure {
+  display: table-cell;
+  float: none;
+  vertical-align: $verticaltext-Middle;
+}

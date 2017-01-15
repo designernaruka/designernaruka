@@ -1,0 +1,368 @@
+// Import Variables and mixins
+
+@import "variables";
+@import "mixins";
+
+// Common CSS
+
+body {
+  color: $brand-secondary;
+  font-size: $textxsmall + 0.2em;
+
+  a {
+    @include transiction(0.6s);
+    border: none;
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $brand-secondary;
+      text-decoration: none;
+    }
+  }
+}
+
+// Headings Common
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.headingSecondary {
+
+  .headingHolder {
+    display: $inBlock;
+    padding: $spacexsmall 0 $spacexsmall $spacesmall;
+    // width: $width100p;
+  }
+
+  h2 {
+    font-size: $textmedium - 0.8;
+  }
+
+  h3 {
+    font-size: $textsmall + 0.8;
+    line-height: 40px;
+  }
+
+  .textLighter {
+    font-style: normal;
+    font-weight: lighter;
+  }
+
+  &:before {
+    border-right: $solidborder 6px $brand-primary;
+    content: '';
+    display: $inBlock;
+    height: 40px;
+    margin: $spacexsmall + 1 0 0 -15px;
+    vertical-align: $verticalTop;
+  }
+
+  span {
+    display: $block;
+    font-size: $textsmall - 0.5;
+    font-weight: lighter;
+  }
+
+}
+
+// Common Padding & margin
+
+.spaceTzero {
+  padding-top : 0;
+}
+
+.spaceRzero {
+  padding-right : 0;
+}
+
+.spaceBzero {
+  padding-bottom : 0;
+}
+
+.spaceLzero {
+  padding-left : 0;
+}
+
+.spaceTnano {
+  padding-top : $spacelarge;
+}
+.spaceBnano {
+  padding-bottom : $spacelarge;
+}
+.spaceB120 {
+  padding-bottom: $spacelarge * 3;
+}
+
+// align and floats
+
+.alignleft {
+  float: $alignleft;
+}
+
+.textleft {
+  float: $alignleft;
+}
+
+.alignright {
+  float: $alignright;
+}
+
+.textright {
+  text-align: $alignright;
+}
+
+.aligncenter {
+  text-align: $aligncenter;
+}
+
+// text color
+.secondaryColor {
+  color: $brand-primary;
+}
+
+
+
+// Intro DN
+
+.dnIntro {
+  height: 100vh;
+  position: $relative;
+  width: 100%;
+
+  .dnIntro-caption {
+    @extend .cell-content-caption;
+  }
+
+  .dnIntro-content {
+    @extend .content-holder;
+  }
+
+  .headingSecondary {
+    display: $inBlock;
+    padding-left: $spacemedium - $spacexsmall;
+  }
+
+  .introText {
+    font-size: 1.2em;
+    padding-top: $spacemedium + $spacesmall;
+    line-height: 2em;
+  }
+
+}
+
+
+// About DN
+
+.dnAbout {
+  height: 100vh;
+  position: $relative;
+  width: 100%;
+
+  .dnAbout-caption {
+    @extend .cell-content-caption;
+  }
+
+  .dnAbout-content {
+    @extend .content-holder;
+  }
+
+  .headingSecondary {
+    padding-left: $spacemedium - $spacexsmall;
+  }
+
+}
+
+
+// Skills DN
+
+.dnSkills {
+  height: 100vh;
+  position: $relative;
+  width: 100%;
+
+  .skillsLeft {
+    background-color: $brand-secondary;
+    color: $brand-white;
+    min-height: 100vh;
+    text-align: $alignright;
+  }
+
+  .skillsRight {
+    background-color: $bg-secondary;
+    color: $brand-secondary;
+    min-height: 100vh;
+    text-align: $alignleft;
+  }
+
+  .skillsPicture {
+    position: $absolute;
+    top: -82px;
+
+    img {
+      min-height: 100vh;
+      width: auto;
+    }
+  }
+
+  .skillsContent {
+    @extend .cell-content-caption;
+    padding: $spacemedium 0;
+
+    &.leftContent {
+      color: $brand-white;
+      text-align: $alignright;
+
+      .col-md-10 {
+        border-right: $dashedborder 2px $brand-white;
+      }
+
+      .skillsSet {
+        float: $alignright;
+      }
+    }
+
+    &.rightContent {
+      color: $brand-secondary;
+
+      .skillsSet {
+        float: $alignleft;
+      }
+
+      .col-md-10 {
+        border-left: $dashedborder 2px $brand-secondary;
+      }
+    }
+
+  }
+
+  .skillsSet {
+    padding-top : $spacemedium;
+
+    h4 {
+      font-size: $textsmall - 0.2em;
+      font-weight: $font-normal;
+    }
+
+    .col-md-2 {
+      text-align: $aligncenter;
+    }
+
+    .col-md-2,
+    .col-md-10 {
+      @extend .cell-structure;
+    }
+
+    .skillExp {
+      font-size: $textxsmall + 0.2em;
+      font-style: normal;
+      font-weight: normal;
+      width: $width100p;
+    }
+  }
+
+  .dnSkills-caption {
+    @extend .cell-content-caption;
+  }
+
+  .dnSkills-content {
+    @extend .content-holder;
+  }
+
+  .headingSecondary {
+    padding-left: $spacemedium - $spacexsmall;
+  }
+
+}
+
+.content-box {
+  position: $relative;
+
+  &.alt-right {
+    margin-bottom: $spacemedium + $spacexsmall;
+    padding-right: $spacelarge + $spacemedium;
+  }
+
+  .alt-icon-right {
+    position: $absolute;
+    right: 0;
+    top: 5px;
+  }
+
+}
+
+.content-box {
+  position: $relative;
+
+  &.alt-right,
+  &.alt-left {
+    margin-bottom: $spacemedium + $spacexsmall;
+  }
+
+  &.alt-right {
+    padding-right: $spacelarge + $spacemedium;
+  }
+
+  &.alt-left {
+    padding-left: $spacelarge + $spacemedium;
+  }
+
+  .alt-icon-right,
+  .alt-icon-left {
+    position: $absolute;
+    top: 5px;
+  }
+
+  .alt-icon-left {
+    left: 0;
+  }
+
+}
+
+
+// Work DN
+
+.dnWork {
+  height: 100vh;
+  position: $relative;
+  width: 100%;
+
+  .dnWork-caption {
+    @extend .cell-content-caption;
+  }
+
+  .dnWork-content {
+    @extend .content-holder;
+  }
+
+  .headingSecondary {
+    padding-left: $spacemedium - $spacexsmall;
+  }
+
+}
+
+
+// Lab DN
+
+.dnLab {
+  height: 100vh;
+  position: $relative;
+  width: 100%;
+
+  .dnLab-caption {
+    @extend .cell-content-caption;
+  }
+
+  .dnLab-content {
+    @extend .content-holder;
+  }
+
+  .headingSecondary {
+    padding-left: $spacemedium - $spacexsmall;
+  }
+
+}
