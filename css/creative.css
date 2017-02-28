@@ -72,7 +72,7 @@ aside {
 .navbar-default .navbar-header .navbar-brand {
   color: #F05F40;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -151,16 +151,17 @@ aside {
   }
 }
 header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
   background-image: url('../img/header.jpg') center top;
-  text-align: center;
+  background-position: 0 -45px;
+  background-size: cover;
   color: white;
+  min-height: auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 header .header-content {
   position: relative;
@@ -169,11 +170,12 @@ header .header-content {
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
+  color: #F05F40;
   font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
